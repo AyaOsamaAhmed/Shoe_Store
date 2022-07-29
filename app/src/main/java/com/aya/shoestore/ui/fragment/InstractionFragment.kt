@@ -30,7 +30,7 @@ class InstractionFragment : Fragment() {
 
 
         binding.shoeList.setOnClickListener {
-            navController.navigate(R.id.action_InstractionFragment_to_LoginFragment)
+            navController.navigate(R.id.action_InstractionFragment_to_ShoeListFragment)
         }
 
         return binding.root

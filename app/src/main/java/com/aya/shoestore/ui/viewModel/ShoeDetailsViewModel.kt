@@ -17,7 +17,7 @@ class ShoeDetailsViewModel : ViewModel() {
 
     fun locatDataShoeList(){
         repeat(10){ i->
-            val data = ShoeListModel( image , "Title $i")
+            val data = ShoeListModel( image , "name $i" , "company $i" , "size $i","desc $i")
             ShoeList.add(data)
         }
         requestListMutableList.value = ShoeList

@@ -36,13 +36,53 @@
          />
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@{model.title}"
+        android:text="@{model.name}"
         android:textColor="@color/black"
         android:textSize="@dimen/text_size"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintBottom_toTopOf="@id/company"
+        />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{model.company}"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintBottom_toTopOf="@id/size"
+        />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{model.size}"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/company"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintBottom_toTopOf="@id/desc"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{model.desc}"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/size"
         app:layout_constraintStart_toEndOf="@id/img"
         app:layout_constraintBottom_toBottomOf="parent"
         />

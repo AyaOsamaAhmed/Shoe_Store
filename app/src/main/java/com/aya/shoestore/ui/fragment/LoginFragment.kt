@@ -29,7 +29,7 @@ class LoginFragment : Fragment() {
 
 
         binding.login.setOnClickListener {
-            navController.navigate(R.id.action_LoginFragment_to_ShoeListFragment)
+            navController.navigate(R.id.action_LoginFragment_to_WelcomeFragment)
         }
 
         return binding.root

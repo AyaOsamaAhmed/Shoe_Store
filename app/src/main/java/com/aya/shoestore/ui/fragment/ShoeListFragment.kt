@@ -29,18 +29,27 @@ class ShoeListFragment : Fragment() {
         navHostFragment.navController
     }
 
+    val image = "https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg"
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding = ShoeListFragmentBinding.inflate(inflater,container, false)
         viewModel = ViewModelProvider(this).get(ShoeListViewModel::class.java)
 
 
+        var arg = arguments?.let { ShoeListFragmentArgs.fromBundle(it) }
+
+
+
         viewModel.requestListMutableList.observe(viewLifecycleOwner, Observer {
             val data = it as ArrayList<ShoeListModel>
+            if(! arg?.name.equals("empty"))
+                data.add(ShoeListModel(image , arg?.name!!,arg.company!! ,arg.size!! , arg.desc!!  ))
             adapter = ShoeListAdapter(data)
             binding.recycler.adapter = adapter
         })
@@ -53,4 +62,6 @@ class ShoeListFragment : Fragment() {
 
         return binding.root
     }
+
+
 }

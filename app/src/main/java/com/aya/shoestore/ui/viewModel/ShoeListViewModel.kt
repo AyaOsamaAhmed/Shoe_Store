@@ -1,5 +1,6 @@
 package com.aya.shoestore.ui.viewModel
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.aya.shoestore.domain.model.ShoeListModel
@@ -17,7 +18,7 @@ class ShoeListViewModel : ViewModel() {
 
     fun locatDataShoeList(){
         repeat(10){ i->
-            val data = ShoeListModel( image , "Title $i")
+            val data = ShoeListModel( image , "name $i" , "company $i" , "size $i","desc $i")
             ShoeList.add(data)
         }
         requestListMutableList.value = ShoeList
