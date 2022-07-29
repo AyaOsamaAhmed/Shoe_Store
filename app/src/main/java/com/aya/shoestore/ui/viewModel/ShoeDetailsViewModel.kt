@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.aya.shoestore.domain.model.ShoeListModel
 
-class ShoeListViewModel : ViewModel() {
+class ShoeDetailsViewModel : ViewModel() {
 
      var requestListMutableList = MutableLiveData<Any>()
       var ShoeList : ArrayList<ShoeListModel> = arrayListOf()
