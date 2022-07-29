@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Shoe Store</string>
+    <string name="app_name">Shoe store</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="skip">Skip</string>
+    <string name="welcome">Happy For connecting with Udacity, I wish take good idea about project and thanks for this course and helping by this matrial Thanks alot</string>
+    <string name="header_welcome">Welcome Page</string>
+    <string name="shoeList">Show Shoe List</string>
+    <string name="instraction">Follow me to Get New Collection To Show Shoe List</string>
+    <string name="header_instraction">Instraction Page</string>
+    <string name="action_logout">Logout</string>
+    <string name="detailsItem">Details Item</string>
 </resources>

@@ -16,10 +16,9 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
-        binding = WelcomeScreenBinding.inflate(inflater,container, true)
-
+        binding = WelcomeScreenBinding.inflate(inflater,container, false)
 
 
 
