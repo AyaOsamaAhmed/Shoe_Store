@@ -24,7 +24,11 @@
 
         <action
             android:id="@+id/action_InstractionFragment_to_ShoeListFragment"
-            app:destination="@id/ShoeListFragment" />
+            app:destination="@id/ShoeListFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/LoginFragment"
+            app:popUpToInclusive="true"
+            />
     </fragment>
 
     <fragment
